@@ -1,0 +1,700 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  width: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/** end reset css**/
+body {
+  max-width: 1920px;
+  margin: 0;
+  font-family: "Work Sans";
+  font-size: 14px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 150px 0 150px;
+}
+section {
+  margin: 50px 0;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Syne";
+  font-size: 22px;
+  font-weight: 800;
+  color: #b1663c;
+}
+
+h1 > span {
+  font-family: "Work Sans";
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  font-family: "Syne";
+  font-weight: 700;
+  font-size: 30px;
+  color: #1d6154;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+nav li {
+  padding: 0 10px;
+  font-size: 1.2em;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+li:hover {
+  color: #b1663c;
+}
+#introduction {
+  display: flex;
+  align-items: center;
+  margin: 50px 200px 0 140px;
+}
+#introduction figure {
+  flex: 1;
+}
+#introduction img {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+#introduction .edit-btn {
+  margin-left: 10%;
+  margin-top: 2%;
+}
+
+#introduction article {
+  flex: 1;
+}
+#introduction h2 {
+  margin-bottom: 1em;
+}
+
+#introduction p {
+  margin-bottom: 0.5em;
+}
+
+#portfolio {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 50px 200px 0 200px;
+}
+
+#portfolio h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+}
+#contact {
+  width: 50%;
+  margin: 40px auto ;
+}
+#contact > * {
+  text-align: center;
+}
+#contact h2 {
+  margin-bottom: 20px;
+}
+#contact form {
+  text-align: left;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact input {
+  height: 50px;
+  font-size: 1.2em;
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#contact label {
+  margin: 2em 0 1em 0;
+}
+#contact textarea {
+  border: none;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+input[type="submit"] {
+  font-family: "Syne";
+  font-weight: 700;
+  color: white;
+  background-color: #1d6154;
+  margin: 2em auto;
+  width: 180px;
+  text-align: center;
+  border-radius: 60px;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2em;
+}
+
+#login {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+}
+
+#login h1 {
+  color: #1d6154;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.form-input label {
+  font-family: "Work Sans";
+  font-weight: 600;
+  font-size: 14px;
+  color: #3d3d3d;
+}
+
+.form-input input[type="email"],
+.form-input input[type="password"] {
+  border: none;
+  background: #ffffff;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+  width: 379px;
+  line-height: 51px;
+  padding: 0 1em;
+}
+
+.login-btn {
+  width: 179px;
+  height: 40px;
+  border: none;
+}
+
+.logged_error {
+  color: #e32b2b;
+  text-align: center;
+  visibility: hidden;
+}
+
+#login form a {
+  color: #3d3d3d;
+  text-decoration-line: underline;
+}
+
+#error-login {
+  color: #e32b2b;
+  text-align: center;
+  visibility: hidden;
+}
+
+.active {
+  font-weight: 600;
+}
+
+.filter {
+  margin: 51px auto;
+}
+
+.btn-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  color: #1d6154;
+  background-color: white;
+  border: 1px solid #1d6154;
+  padding: 9px 21px;
+  border-radius: 60px;
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  transition: background 400ms;
+}
+
+.btn-active,
+.btn:hover {
+  background: #1d6154;
+  color: #ffffff;
+}
+.edit-btn {
+  align-items: flex-start;
+  gap: 8px;
+  padding: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.edit-btn p {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+}
+
+.edit-btn img {
+  width: 18px;
+  height: 18px;
+  margin-left: 30px;
+}
+
+.mode_edition {
+  background: #000000;
+  width: 100%;
+  height: 59px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+  z-index: 1;
+}
+
+.mode_edition p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+  gap: 9px;
+  cursor: pointer;
+}
+
+.fa-pen-to-square {
+  color: #ffffff;
+}
+
+.mode_edition button {
+  background: #ffffff;
+  border-radius: 60px;
+  font-family: "Work Sans";
+  font-weight: 600;
+  font-size: 14px;
+  padding: 11px 23px;
+  cursor: pointer;
+}
+
+.mode_edition img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(104deg) brightness(103%) contrast(103%);
+}
+
+.modal-container {
+	background: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	z-index: 1;
+	display:none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+	background: #FFFFFF;
+	border-radius: 10px;
+	width: 570px;
+	height: auto;
+	padding: 26px 30px 55px;
+}
+
+
+.close-modal{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.close-modal img{
+  cursor: pointer;
+}
+
+.close-btn {
+	width: 24px;
+	height: 24px;
+	display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.return-btn {
+	visibility: hidden;
+	width: 21px;
+  height: 21px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
+  font-size: 26px;
+  font-family: Work Sans;
+  font-weight: 400;
+  word-wrap: break-word 
+}
+
+.gallery-modal{
+  display: grid;
+	grid-template-columns: repeat(5, 1fr);
+  gap: 7px;
+  margin: 46px 75px 0;
+  row-gap: 16px;
+}
+
+.gallery-modal figure {
+	position: relative;
+	width: 85px;
+	height: 142px;
+}
+
+
+.gallery-modal figure > img {
+	width: 100%;
+	height: 90%;
+	object-fit: cover;
+}
+
+.gallery-modal figure > figcaption {
+	font-size: 12px;
+}
+
+.btn-del-icon {
+  position: absolute;
+  background-color: #000000;
+  border-radius: 2px;
+  width: 17px;
+  height: 17px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  top: 6px;
+  right: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-del-icon img {
+width: 9px;
+height: 9px;
+
+}
+
+.modal-line{
+  margin: 66px 0 0 80px;
+  width: 79%; 
+  height: 100%; 
+  border: 0.50px #B3B3B3 solid
+}
+
+.add-btn{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+	margin: 38px 150px 0 185px;
+	padding-top: 47px;
+  border-top: 1px solid #B3B3B3;
+  background: #1D6154;
+	border-radius: 60px;
+	font-family: 'Syne';
+	font-size: 14px;
+	font-weight: 700;
+	color: #FFFFFF;
+	padding: 10px 49px;
+  border: none;
+}
+
+.addwork-modal {
+	display: none;
+	margin: 36px calc(105px - 30px) 0;
+}
+
+.addwork-modal form {
+	display: flex;
+	flex-direction: column;
+}
+
+.work-upload {
+	background: #E8F1F7;
+	border-radius: 3px;
+	height: 169px;
+}
+
+.work-upload-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 28px 0 19px;
+	position: relative;
+}
+
+.work-upload-form input[type="file"] {
+	opacity: 0;
+    width: 173px;
+    height: 36px;
+    position: absolute;
+    left: 29.5%;
+    bottom: 23%;
+}
+
+.work-upload-form input[type="file"]:hover .upload-work button {
+	opacity: 0.8;
+}
+
+.work-upload-form img {
+	width: 58px;
+	height: 46px;
+}
+
+.work-upload-form button {
+	background: #CBD6DC;
+	color: #306685;
+	border-radius: 50px;
+	font-family: 'Work Sans';
+	font-size: 14px;
+	font-weight: 500;
+	padding: 10px 33px;
+	margin: 21px 0 7px;
+}
+
+.work-upload-form p {
+	font-family: 'Work Sans';
+	font-size: 10px;
+	font-weight: 400;
+	color: #444444;
+}
+
+.inputs-addwork {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid #B3B3B3;
+  padding-bottom: 47px;
+}
+
+.inputs-addwork input[type="text"] {
+	margin-bottom: 21px;
+}
+
+.addwork-modal form label {
+	font-family: 'Work Sans';
+	font-size: 14px;
+	font-weight: 600;
+	color: #3D3D3D;
+	margin-bottom: 10px;
+}
+
+.addwork-modal form input[type="text"],
+.addwork-modal form select {
+	background: #FFFFFF;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+	border: none;
+	height: 51px;
+	padding: 0 16px;
+	font-family: 'Work Sans';
+	font-size: 14px;
+	font-weight: 400;
+	color: #444444;
+}
+
+.addwork-modal form select {
+	appearance: none;
+	-webkit-appearance: none;
+	background-image: url('icons/select_arrow-icon.svg');
+	background-repeat: no-repeat;
+	background-position: calc(100% - 29px) center;
+}
+
+
+.submit-btn{
+	width: 237px;
+  height: 36px;
+  border: none;
+}
+
+.work-imgUpload {
+	justify-content: center;
+	height: 100%;
+}
+
+.current-img-upload {
+	width: 129px;
+  height: 100%;
+	object-fit: cover;
+}
